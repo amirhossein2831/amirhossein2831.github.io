@@ -10,6 +10,8 @@
 @font-face { font-family: Whisper; src: url('../fonts/whisper-400.ttf') format('truetype'); font-weight: 400; font-display: swap; }
 
 :root { color-scheme: light; --blue: #1531ad; --hero-blue-top: #3c5fd8; --blue-light: #688bda; --ink: #182747; --lavender: #8e7ab8; font-family: Inter, sans-serif; }
+/* Keep the rightmost 30% dark, fading toward the lighter left side. */
+:root { --hero-right-shade: linear-gradient(90deg, rgb(21 49 173 / 0) 0%, var(--blue) 70%, var(--blue) 100%); }
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: #fff; color: #000; }
 h1, h2, h3, p, dl, dd { margin: 0; }
@@ -24,7 +26,7 @@ img { display: block; }
 .header-inner, .hero-inner, .page-content { width: 100%; max-width: 1440px; margin-inline: auto; container-type: inline-size; }
 
 /* Header: y 0–80. The stock logo and unused Blog link are personalized. */
-.site-header { background: var(--hero-blue-top); color: #fff; }
+.site-header { background: var(--hero-right-shade), var(--hero-blue-top); color: #fff; }
 .header-inner { height: min(5.555556vw, 80px); display: flex; align-items: center; justify-content: space-between; padding-inline: min(4.305556vw, 62px) min(4.375vw, 63px); }
 .brand { flex: 0 0 8.055556cqw; font-family: Whisper, cursive; font-size: 4.1cqw; line-height: 1; text-decoration: none; }
 .site-header nav { display: flex; align-items: center; gap: 2.5cqw; }
@@ -36,7 +38,7 @@ img { display: block; }
 .solid-button { display: inline-flex; align-items: center; justify-content: center; background: var(--ink); color: #fff; font-weight: 800; text-decoration: none; }
 
 /* Hero: all positions below are relative to the 80px header. */
-.hero { position: relative; z-index: 1; height: min(65vw, 936px); background: linear-gradient(180deg, var(--hero-blue-top) 0%, #2b4bc5 42%, var(--blue) 100%); color: #fff; isolation: isolate; }
+.hero { position: relative; z-index: 1; height: min(65vw, 936px); background: var(--hero-right-shade), linear-gradient(180deg, var(--hero-blue-top) 0%, #2b4bc5 42%, var(--blue) 100%); color: #fff; isolation: isolate; }
 .hero-inner { position: relative; z-index: 1; height: 100%; }
 .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 10px; background: #fff; pointer-events: none; }
 .hero-white, .hero-layer { position: absolute; pointer-events: none; background-repeat: no-repeat; background-size: contain; }
