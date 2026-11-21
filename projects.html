@@ -1,200 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Page</title>
-  <link rel="stylesheet" href="statics/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects &amp; Production Work | AmirHossein Motaghian</title>
+  <meta name="description" content="Selected work by AmirHossein Motaghian: Tapsi’s Heimdall incident platform, Kafka event streaming, datacenter failover, and a public Kubernetes RBAC monitor.">
+  <link rel="canonical" href="https://amirhossein2831.github.io/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AmirHossein Motaghian">
+  <meta property="og:title" content="Projects &amp; Production Work | AmirHossein Motaghian">
+  <meta property="og:description" content="Production work at Tapsi and public backend projects, from incident response and Kafka to Kubernetes RBAC monitoring.">
+  <meta property="og:url" content="https://amirhossein2831.github.io/projects.html">
+  <meta property="og:image" content="https://amirhossein2831.github.io/assets/images/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AmirHossein Motaghian — Backend engineering and site reliability">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f8f4">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
-  <header>
-    <div class="">
-        <h1>AmirHossein Motaghian</h1>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="AmirHossein Motaghian, home">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-name">AmirHossein Motaghian</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html" aria-current="page">Work</a></li>
+          <li><a href="./more.html">Experience</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li >
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="active">
-          <a href="./projects.html">Projects</a>
-        <li>
-          <a href="./more.html">More</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <div class="page2">
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/Single-Sign-On-image.png" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/">
-                    <div class="project-title">Authenticator</div>
-                    <div class="project-description">
-                        The Authentication Microservice project by Amir is designed to provide highly scalable user authentication and authorization. Built using Go, Docker, and NGINX, the service leverages Docker Compose for easy scaling and deployment, supporting various user management functions.<br>
-                        <ul>
-                            <li>
-                                User Management and Access Control: Provides comprehensive user features such as login, registration, password reset, and access revocation.
-                            </li>
-                            <li>
-                                Redis for Session Management: Utilizes Redis for stateless session management, ensuring efficient and secure session handling across instances.
-                            </li>
-                            <li>
-                                Scalable and Dockerized Architecture: The service is Dockerized and can be scaled seamlessly using Docker Compose, with NGINX acting as a reverse proxy for efficient traffic management.
-                            </li>
-                            <li>
-                                Microservice Ready: Designed as a stateless microservice, it can be easily integrated into larger systems, ensuring high availability and scalability.
-                            </li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
+  <main id="main-content" class="wrap" tabindex="-1">
+    <header class="page-intro">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span> Portfolio / Selected work</p>
+      <h1>Projects and production work</h1>
+      <p>Systems I’ve built or worked on, from a ride-hailing platform’s incident tooling to a public Go service for monitoring Kubernetes permissions.</p>
+      <nav class="jump-links" aria-label="On this page">
+        <a class="text-link" href="#production">Production work <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="#public-projects">Public projects <span aria-hidden="true">↓</span></a>
+      </nav>
+    </header>
+
+    <section id="production" class="section" aria-labelledby="production-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / Tapsi</p>
+          <h2 id="production-title">Production work</h2>
         </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/kafka2.jpg" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/">
-                    <div class="project-title">Job Managment</div>
-                    <div class="project-description">
-                        The Job Management System is a flexible solution for job creation and dispatch, integrating Redis, RabbitMQ, and Kafka for efficient processing. It allows easy implementation of custom job interfaces, making it adaptable for various use cases.
-                        <ul>
-                            <li>
-                                Job Creation and Dispatch: Utilizes Redis, RabbitMQ, and Kafka for seamless job creation (consumer) and dispatch (publisher).
-                            </li>
-                            <li>
-                                Custom Job Implementation: Developers can implement custom jobs by creating their own job interfaces, ensuring flexibility.        
-                            </li>
-                            <li>
-                                Job Status and Admin Panel: Real-time job tracking and status monitoring through an intuitive admin panel.       
-                            </li>
-                            <li>
-                                Efficient Job Management: With Redis, RabbitMQ, and Kafka integrations,handles large job volumes, improving throughput and performance.
-                            </li>
-                            <li>
-                                Packaged as an installable Go package, this system simplifies job management across different environments.
-                            </li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
+      </div>
+      <div class="work-grid">
+        <article id="heimdall" class="card feature-card">
+          <div>
+            <p class="card-type"><span aria-hidden="true">01</span> Site reliability</p>
+            <h3>Heimdall incident management</h3>
+            <p>I built an internal incident platform to replace Grafana OnCall. Heimdall brings alert routing, escalation, triage, and structured postmortems into one place. It also automates incident timing metrics and reports uptime based on whether riders can request a ride.</p>
+          </div>
+          <p class="feature-stat"><strong>200</strong> engineers across 20 teams</p>
+        </article>
+        <article id="event-streaming" class="card">
+          <p class="card-type"><span aria-hidden="true">02</span> Backend engineering</p>
+          <h3>Kafka event streaming</h3>
+          <p>I built Kafka producers and consumers and designed topic partitioning and consumer groups around ordering, retries, and lag. I used Project Reactor and WebFlux to build non-blocking services with backpressure for sustained workloads.</p>
+          <ul class="tags" aria-label="Technologies"><li>Kafka</li><li>Project Reactor</li><li>WebFlux</li></ul>
+        </article>
+        <article id="datacenter-failover" class="card">
+          <p class="card-type"><span aria-hidden="true">03</span> Site reliability</p>
+          <h3>Datacenter failover</h3>
+          <p>I worked on an active-standby disaster recovery design across two datacenters, defining service-specific failover configuration for critical paths.</p>
+          <ul class="tags" aria-label="Topics"><li>Disaster recovery</li><li>High availability</li></ul>
+        </article>
+        <article id="app-home-feed" class="card">
+          <p class="card-type"><span aria-hidden="true">04</span> Backend engineering</p>
+          <h3>Server-driven rider home feed</h3>
+          <p>I designed and built the server-driven layout behind the Tapsi app’s infinite-scroll home feed. Product teams could change the feed’s content and layout without shipping a new app version.</p>
+          <ul class="tags" aria-label="Topics"><li>Server-driven UI</li><li>Mobile backend</li></ul>
+        </article>
+        <article id="nginx-rate-limiting" class="card">
+          <p class="card-type"><span aria-hidden="true">05</span> Site reliability</p>
+          <h3>Reducing HTTP 429 responses</h3>
+          <p>I fixed how Nginx allocated rate-limit buckets across domains and added caching for preflight requests. Together, the changes cut HTTP 429 (Too Many Requests) responses by at least half.</p>
+          <ul class="tags" aria-label="Topics"><li>Nginx</li><li>Rate limiting</li><li>Caching</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="public-projects" class="section" aria-labelledby="public-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / GitHub</p>
+          <h2 id="public-title">Public projects</h2>
         </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/notification.avif" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/">
-                    <div class="project-title">Notification Sender</div>
-                    <div class="project-description">
-                        The Go-based Notification Microservice project is designed to efficiently handle email and SMS notifications, providing a multi-driver approach with support for several SMS providers. This project is a microservice that focusing on scalability and reliability.                    
-                        <ul>
-                            <li>
-                                Multi-Driver Notification System: The service supports sending emails via SMTP and SMS notifications through multiple providers, including SMS-ir, Kavenegar, and Twilio, using a builder pattern for flexibility.                       
-                            </li>
-                            <li>
-                                SMS Queuing with RabbitMQ: RabbitMQ is used to queue SMS messages to process them concurrently for fast and reliable delivery.                        
-                            </li>
-                            <li>
-                                Scalable Architecture: The project handles high volumes of notifications using RabbitMQ and multiple workers for fast processing. Dockerized for easy deployment, it ensures seamless scalability and integration across environments.                        
-                            </li>
-                        </ul>                               
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/ecommerce.jpeg" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/E_Commerce_App">
-                    <div class="project-title">E Commerce</div>
-                    <div class="project-description">
-                        E-commerce App API, built with Django and DRF, includes user authentication, product management (CRUD), and order processing. With concise documentation and client libraries, designed for efficiency and scalability to support engaging e-commerce experiences.                    <ul>
-                            <li>
-                                Fully Dockerized for simple setup and deployment, ensuring seamless integration and development.
-                            </li>
-                            <li>
-                                Email delivery with Celery and Redis ensures reliable, asynchronous email processing.
-                            </li>
-                            <li>
-                                Automated testing with Pytest ensures project reliability efficient regression testing.
-                            </li>
-                            <li>
-                                Swagger integration offers user-friendly, interactive API documentation for easy exploration of endpoints.
-                            </li>
-                            <li>
-                                Using Factory Boy for efficient DB seeding to quickly populate your database with realistic data for testing and development.
-                            </li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/find-job.avif" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/Job_Application">
-                    <div class="project-title">FindJob - Ultimate Job Search and Recruitment Platform</div>
-                    <div class="project-description">
-                        FindJob is a job application platform that connects job seekers and employers in a secure, efficient, and user-friendly environment using Laravel and Bootstrap.
-                        <ul>
-                            <li>
-                                Job seekers can easily find jobs with advanced filters and personalized recommendations.
-                            </li>
-                            <li>
-                                Job seekers can create detailed profiles, showcasing resumes and work history for employers.
-                            </li>
-                            <li>
-                                Employers can post job listings, review applicant profiles, and connect with candidates.
-                            </li>
-                            <li>
-                                The platform provides secure messaging for seamless communication between job seekers and employers.
-                            </li>
-                            <li>
-                                Laravel’s built-in authentication ensures secure user data and job applications.
-                            </li>
-                        </ul>
-                    </div>   
-                </a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="./statics/img/tic-tac-toe-game-vn8K8lD-600.jpg" alt="project-image" class="project-img"/>
-            </div>
-            <div class="project-content">
-                <a href="https://github.com/amirhossein2831/Tic-Tac-Teo">
-                    <div class="project-title">Tic Tac Toe</div>
-                    <div class="project-description">
-                        The Tic Tac Toe Game project is a classic and universally loved game that needs no introduction. Developed using Java and JavaFX which you can play and enjoy with your friends.
-                        <ul>
-                            <li>
-                                Engaging Fun: Tic Tac Toe is a simple yet engaging game that brings people together. It offers a delightful way to bond with friends and family while competing in a friendly atmosphere
-                            </li>
-                            <li>
-                                Bringing People Together: This project embodies the essence of friendly competition and fun, making it a great choice for social gatherings or simply passing the time with a friend.
-                            </li>
-                            <li>
-                                Interactive Java and JavaFX: Powered by Java and JavaFX, It highlights the ability to create interactive and visually appealing user interfaces.
-                            </li>
-                        </ul>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+        <a class="text-link" href="https://github.com/amirhossein2831?tab=repositories">Browse repositories <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="work-grid">
+        <article id="rbac-monitor" class="card">
+          <p class="card-type"><span aria-hidden="true">01</span> Infrastructure tooling</p>
+          <h3>Kubernetes RBAC monitor</h3>
+          <p>A read-only Go service that resolves role bindings for a supplied inventory of users and groups. It stores permission history in Elasticsearch and surfaces sensitive-access counts through Prometheus and Grafana.</p>
+          <ul class="tags" aria-label="Technologies"><li>Go</li><li>Kubernetes</li><li>Prometheus</li><li>Elasticsearch</li></ul>
+          <a class="text-link card-link" href="https://github.com/amirhossein2831/kubernetes-access-manager">View RBAC monitor on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article id="ecommerce-api" class="card">
+          <p class="card-type"><span aria-hidden="true">02</span> Backend API</p>
+          <h3>E-commerce API</h3>
+          <p>A Django REST API for product management and order workflows. It uses Celery and Redis for background email delivery, with automated tests and Swagger API documentation.</p>
+          <ul class="tags" aria-label="Technologies"><li>Django REST Framework</li><li>Celery</li><li>Redis</li><li>Pytest</li></ul>
+          <a class="text-link card-link" href="https://github.com/amirhossein2831/E_Commerce_App">View e-commerce API on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>AmirHossein Motaghian <span aria-hidden="true">·</span> Tehran, Iran</p>
+      <ul class="footer-links" aria-label="Profiles">
+        <li><a href="https://github.com/amirhossein2831">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/amirh-motaghian-644698387">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

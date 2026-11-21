@@ -1,82 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Page</title>
-  <link rel="stylesheet" href="statics/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AmirHossein Motaghian | Backend Engineer &amp; SRE</title>
+  <meta name="description" content="AmirHossein Motaghian is a Site Reliability Engineer at Tapsi. Explore his work on backend systems, Kubernetes, production reliability, and Go projects.">
+  <link rel="canonical" href="https://amirhossein2831.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AmirHossein Motaghian">
+  <meta property="og:title" content="AmirHossein Motaghian | Backend Engineer &amp; SRE">
+  <meta property="og:description" content="Backend systems and production reliability. Selected work from Tapsi and public projects in Go and Kubernetes.">
+  <meta property="og:url" content="https://amirhossein2831.github.io/">
+  <meta property="og:image" content="https://amirhossein2831.github.io/assets/images/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AmirHossein Motaghian — Backend engineering and site reliability">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f8f4">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://amirhossein2831.github.io/",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://amirhossein2831.github.io/#person",
+        "name": "AmirHossein Motaghian",
+        "url": "https://amirhossein2831.github.io/",
+        "image": "https://amirhossein2831.github.io/assets/images/portrait-760.webp",
+        "jobTitle": "Site Reliability Engineer",
+        "worksFor": {"@type": "Organization", "name": "Tapsi", "url": "https://tapsi.ir/"},
+        "sameAs": [
+          "https://github.com/amirhossein2831",
+          "https://www.linkedin.com/in/amirh-motaghian-644698387"
+        ]
+      }
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">AmirHossein Motaghian</div>
-    <nav>
-      <ul>
-        <li class="active">
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./projects.html">Projects</a>
-        <li>
-          <a href="./more.html">More</a>
-        </li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="AmirHossein Motaghian, home">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-name">AmirHossein Motaghian</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li><a href="./projects.html">Work</a></li>
+          <li><a href="./more.html">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="body-content">
-      <div class="text-section">
-        <div>
-          <h1>Computer Engineer</h1>
+  <main id="main-content" class="wrap" tabindex="-1">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="marker" aria-hidden="true"></span> Backend engineering / Site reliability</p>
+        <h1 id="intro-title">AmirHossein<br>Motaghian</h1>
+        <p class="hero-lead">I build backend services and keep them reliable in production.</p>
+        <p class="intro-copy">I’m a Site Reliability Engineer at <a href="https://tapsi.ir/">Tapsi</a>, a ride-hailing platform in Iran. I work on outage detection, incident response, and failover across datacenters. Before moving into SRE, I built event-driven services and real-time rider features at Tapsi.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#selected-work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="./more.html">View experience <span aria-hidden="true">→</span></a>
         </div>
-
-        <div>
-          <p>
-            Hi! I'm AmirHossein Motaghian, a Computer Engineering student at Amirkabir University of Technology and a Software Engineer currently working at TAPSI. I’m passionate about building scalable backend systems, exploring distributed architectures, and diving deep into DevOps and cloud technologies.<br><br>
-          
-            When I'm not coding or designing systems, I enjoy learning about new tech trends, contributing to meaningful projects, and sharpening my skills through side projects and challenges.<br><br>
-          
-            I'm particularly interested in cloud-native development, system design, and building efficient developer workflows. I believe in writing clean, maintainable code and collaborating in team environments that promote innovation and growth.<br><br>
-          
-            Recently, I’ve been focusing on improving my knowledge of system resilience, observability, and distributed tracing to better understand the inner workings of large-scale applications.<br><br>
-                    
-            Welcome to my digital space — feel free to explore my projects and interests!
-          </p>
-          
+      </div>
+      <figure class="portrait">
+        <div class="portrait-image">
+          <img src="./assets/images/portrait-380.webp" srcset="./assets/images/portrait-380.webp 380w, ./assets/images/portrait-760.webp 760w" sizes="(max-width: 28rem) calc(100vw - 2.5rem), 380px" width="380" height="380" alt="Portrait of AmirHossein Motaghian" fetchpriority="high">
         </div>
-        
-      </div>
-  
-      <div class="image-section">
-        <div class="r-circle"></div>
-        <div class="l-circle"></div>
-        <img src="./statics/img/me2.jpg" alt="profile" class="profile-img" />
-      </div>
-    </div>
+        <figcaption><span class="marker" aria-hidden="true"></span> SRE at Tapsi <span class="portrait-location">Tehran, Iran</span></figcaption>
+      </figure>
+    </section>
 
-    
+    <dl class="highlights" aria-label="Production work at a glance">
+      <div><dt>200 engineers</dt><dd>Across 20 teams supported by Heimdall</dd></div>
+      <div><dt>2 datacenters</dt><dd>Covered by active-standby failover design</dd></div>
+      <div><dt>50%+ fewer HTTP 429s</dt><dd>After Nginx rate-limit and caching fixes</dd></div>
+    </dl>
+
+    <section id="selected-work" class="section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / Selected work</p>
+          <h2 id="work-title">Projects and production work</h2>
+        </div>
+        <a class="text-link" href="./projects.html">See all work <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <p class="card-type"><span aria-hidden="true">01</span> Production · Tapsi</p>
+          <h3><a href="./projects.html#heimdall">Heimdall</a></h3>
+          <p>I built Tapsi’s in-house incident management platform to bring alert routing, escalation, triage, and postmortems into one place.</p>
+          <p class="card-detail">Replaced Grafana OnCall</p>
+        </article>
+        <article class="card">
+          <p class="card-type"><span aria-hidden="true">02</span> Production · Tapsi</p>
+          <h3><a href="./projects.html#event-streaming">Kafka event streaming</a></h3>
+          <p>I built producers and consumers and designed partitioning, retries, and backpressure handling for services under sustained load.</p>
+          <p class="card-detail">Kafka · Project Reactor</p>
+        </article>
+        <article class="card">
+          <p class="card-type"><span aria-hidden="true">03</span> Public project</p>
+          <h3><a href="./projects.html#rbac-monitor">Kubernetes RBAC monitor</a></h3>
+          <p>A read-only Go service that records Kubernetes permissions over time and shows which monitored users have sensitive access.</p>
+          <p class="card-detail">Go · Kubernetes · Prometheus</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-panel" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">02 / Contact</p>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>I’m interested in backend, platform engineering, and SRE roles. I’m open to relocating internationally from March 2027.</p>
+      </div>
+      <div class="actions">
+        <a class="button button-light" href="mailto:amirmotaghian0994@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline-light" href="https://www.linkedin.com/in/amirh-motaghian-644698387">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
-  <footer>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/amirh_motaghian/" aria-label="Instagram profile">
-        <i class="fa fa-instagram" style="font-size:24px;color: gray;" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/amirhossein2831" aria-label="Github profile">
-        <i class="fa fa-github" style="font-size:24px;color: gray;" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/amirhossein-motaghian-b4a165272" aria-label="Linkedin profile">
-        <i class="fa fa-linkedin" style="font-size:24px;color: gray;" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.facebook.com/" aria-label="Instagram profile">
-        <i class="fa fa-facebook" style="font-size:24px;color: gray;" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.facebook.com/" aria-label="Twitter profile">
-        <i class="fa fa-twitter" style="font-size:24px;color: gray;" aria-hidden="true"></i>
-      </a>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>AmirHossein Motaghian <span aria-hidden="true">·</span> Tehran, Iran</p>
+      <ul class="footer-links" aria-label="Profiles">
+        <li><a href="https://github.com/amirhossein2831">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/amirh-motaghian-644698387">LinkedIn</a></li>
+      </ul>
     </div>
   </footer>
 </body>

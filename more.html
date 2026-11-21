@@ -1,155 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Page</title>
-  <link rel="stylesheet" href="statics/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience &amp; Skills | AmirHossein Motaghian</title>
+  <meta name="description" content="AmirHossein Motaghian’s engineering experience at Tapsi, Savis, and Bahar Samane Shargh, plus technical skills and education at Amirkabir University of Technology.">
+  <link rel="canonical" href="https://amirhossein2831.github.io/more.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AmirHossein Motaghian">
+  <meta property="og:title" content="Experience &amp; Skills | AmirHossein Motaghian">
+  <meta property="og:description" content="From backend development to site reliability at Tapsi: roles, skills, education, and interests.">
+  <meta property="og:url" content="https://amirhossein2831.github.io/more.html">
+  <meta property="og:image" content="https://amirhossein2831.github.io/assets/images/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AmirHossein Motaghian — Backend engineering and site reliability">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f8f4">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
-  <header>
-    <div class="">
-        <h1>AmirHossein Motaghian</h1>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="AmirHossein Motaghian, home">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-name">AmirHossein Motaghian</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./projects.html">Work</a></li>
+          <li><a href="./more.html" aria-current="page">Experience</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./projects.html">Projects</a>
-        <li class="active">
-          <a href="./more.html">More</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <div class="page3">
-       <div class="experiance">
-        <div class="experiance-header">Experiences</div>
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/tapsi.png" alt="experiance-image" class="experiance-img"/>
-            </div>
-            <a href="https://tapsi.ir/">
-                <div class="experiance-content">
-                    <div class="experiance-title">Software Engineer</div>
-                    <div class="experiance-company">TAPSi. full-time <span class="experiance-sub-title">Apr 20235-Present. 1 mo</span></div>
-                    <div class="experiance-description">
-                        At TAPSI, I work as a software engineer, contributing to the design, development, and maintenance of scalable software solutions. I collaborate with cross-functional teams to build reliable systems, improve performance, and ensure seamless user experiences across our platforms.
-                    </div>
-                </div>
-           </a>
+  <main id="main-content" class="wrap" tabindex="-1">
+    <header class="page-intro">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span> Portfolio / Experience</p>
+      <h1>Experience and skills</h1>
+      <p>My work spans financial services, ride-hailing backends, and the infrastructure that keeps those services running.</p>
+    </header>
+
+    <div class="experience-grid">
+      <section class="section" aria-labelledby="roles-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Career</p>
+            <h2 id="roles-title">Professional experience</h2>
+          </div>
         </div>
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/savis.jpeg" alt="experiance-image" class="experiance-img"/>
+        <ol class="timeline">
+          <li>
+            <article>
+              <p class="role-meta"><span>Tapsi</span><span><time datetime="2026-04">Apr 2026</time> – Present</span></p>
+              <h3>Site Reliability Engineer</h3>
+              <ul class="role-bullets">
+                <li>Built <a href="./projects.html#heimdall">Heimdall</a>, an internal incident management platform serving 200 engineers across 20 teams.</li>
+                <li>Rebuilt VictoriaMetrics and PromQL alert rules to catch complete outages. Added a fallback phone paging path for critical alerts.</li>
+                <li>Diagnosed production connection failures in Istio. Fixed Nginx rate limiting and preflight caching, cutting HTTP 429 responses by at least half.</li>
+                <li>Worked on <a href="./projects.html#datacenter-failover">failover across two datacenters</a> and planned a multi-cluster Redis and Hazelcast cache migration.</li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="role-meta"><span>Tapsi</span><span><time datetime="2025-04">Apr 2025</time> – <time datetime="2026-04">Apr 2026</time></span></p>
+              <h3>Software Engineer</h3>
+              <ul class="role-bullets">
+                <li>Built <a href="./projects.html#event-streaming">Kafka streaming pipelines</a> and non-blocking services with Project Reactor and WebFlux.</li>
+                <li>Designed and scaled a real-time service that matches supply to demand. Worked on Socket.IO connections and mobile notification delivery.</li>
+                <li>Built a <a href="./projects.html#app-home-feed">server-driven layout system</a> so product teams could update the app’s home feed without a client release.</li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="role-meta"><span>Noafarinan Dadeh Pardaz Savis</span><span><time datetime="2024-04">Apr 2024</time> – <time datetime="2025-04">Apr 2025</time></span></p>
+              <h3>Backend Developer</h3>
+              <p>Built credit issuance, limit management, and account services. Used idempotent operations and database transactions to keep balances consistent through concurrent requests and retries.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="role-meta"><span>Bahar Samane Shargh</span><span><time datetime="2023-09">Sep 2023</time> – <time datetime="2024-02">Feb 2024</time></span></p>
+              <h3>Backend Developer</h3>
+              <p>Built services that provisioned virtual machines and hosts through third-party APIs, handling asynchronous workflows and failure states.</p>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <div class="sidebar">
+        <section class="section" aria-labelledby="skills-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Toolbox</p>
+              <h2 id="skills-title">Technical skills</h2>
             </div>
-            <a href="">
-                <div class="experiance-content">
-                    <div class="experiance-title">Backend Developer</div>
-                    <div class="experiance-company">Savis. full-time <span class="experiance-sub-title">Jul 2024-Mar 2025 . 9 mo</span></div>
-                    <div class="experiance-description">
-                        As a backend developer at SaviS, I focused on building and maintaining financial services, including wallet systems and transaction management. My work involved designing and implementing robust APIs, handling CRUD operations, and ensuring data consistency and security in financial workflows.
-                    </div>
-                </div>
-           </a>
-        </div>
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/bahar.png" alt="experiance-image" class="experiance-img"/>
+          </div>
+          <dl class="skill-list card">
+            <div><dt>Languages and APIs</dt><dd>Go, Java, Kotlin, Node.js, REST, gRPC</dd></div>
+            <div><dt>Infrastructure</dt><dd>Kubernetes, Istio, Docker, Linux, Flux, Helm, Terraform, GitLab CI</dd></div>
+            <div><dt>Data and messaging</dt><dd>Kafka, Redis, Hazelcast, PostgreSQL, MongoDB, Elasticsearch</dd></div>
+            <div><dt>Observability</dt><dd>VictoriaMetrics, Prometheus, PromQL, Grafana, Graylog, OpenTelemetry</dd></div>
+          </dl>
+        </section>
+
+        <section class="section" aria-labelledby="education-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Education</p>
+              <h2 id="education-title">University</h2>
             </div>
-            <a href="https://esavis.ir/">
-                <div class="experiance-content">
-                    <div class="experiance-title">Backend developer</div>
-                    <div class="experiance-company">Bahar Samaneh. full-time <span class="experiance-sub-title">Oct 2023-Mar 2024. 6 mo</span></div>
-                    <div class="experiance-description">
-                        At Bahar Samaneh, I worked as a backend developer on a hosting platform, developing and maintaining core services for domain and hosting management. My responsibilities included building APIs, optimizing database performance, and ensuring system reliability for a seamless user experience.                    </div>
-                </div>
-           </a>
-        </div>
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/AKUT.svg.png" alt="experiance-image" class="experiance-img"/>
+          </div>
+          <div class="card education-card">
+            <h3>Bachelor’s in Computer Engineering</h3>
+            <p><a href="https://aut.ac.ir/en">Amirkabir University of Technology</a></p>
+            <p><time datetime="2022-09">Sep 2022</time> – <time datetime="2027-02">Feb 2027</time> (expected)</p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="interests-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / Outside work</p>
+              <h2 id="interests-title">A bit more about me</h2>
             </div>
-            <a href="https://aut.ac.ir/en">
-                <div class="experiance-content">
-                    <div class="experiance-title">CE Student</div>
-                    <div class="experiance-company">AmirKabir University. full-time <span class="experiance-sub-title">Sep 2022-Present. 2 yr and 9 mo</span></div>
-                    <div class="experiance-description">
-                        I'm currently pursuing a degree in Computer Engineering at Amirkabir University of Technology, where I’ve built a strong foundation in software development, algorithms, and system design. My studies are complemented by hands-on projects and internships in real-world tech environments.
-                    </div>
-                </div>
-            </a>
-        </div>
-       </div>
-       <div class="experiance">
-        <div class="experiance-header">Interests</div>
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/cloud.png" alt="experiance-image" class="experiance-img"/>
-            </div>
-            <div class="experiance-content">
-                <div class="experiance-title">Cloud Computing</div>
-                <div class="experiance-description">
-                    I'm interested in learning and working with cloud platforms like AWS, GCP, and Azure. I enjoy exploring infrastructure as code, scalable deployments, and cloud-native services. 
-                    I'm particularly drawn to serverless architectures and managed services that simplify backend complexity. 
-                    I aim to deepen my understanding of networking, IAM, and cost optimization in cloud environments.
-                </div>
-            </div>
-        </div>
-        
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/devops.png" alt="experiance-image" class="experiance-img"/>
-            </div>
-            <div class="experiance-content">
-                <div class="experiance-title">DevOps & Automation</div>
-                <div class="experiance-description">
-                    I’m passionate about DevOps practices, CI/CD pipelines, containerization with Docker, and orchestration using Kubernetes. I love automating workflows and improving deployment efficiency. 
-                    I'm exploring tools like Terraform and Ansible for infrastructure automation. 
-                    I’m also curious about monitoring, observability, and building self-healing systems. 
-                    I'm working on integrating security checks into pipelines (DevSecOps) to enhance reliability from the start.
-                </div>
-            </div>
-        </div>
-        
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/distributed.jpeg" alt="experiance-image" class="experiance-img"/>
-            </div>
-            <div class="experiance-content">
-                <div class="experiance-title">Distributed Systems</div>
-                <div class="experiance-description">
-                    I'm fascinated by distributed systems and enjoy studying concepts like consensus algorithms, scalability, fault tolerance, and eventual consistency in modern architectures. 
-                    I enjoy analyzing case studies of large-scale systems like Kafka, Cassandra, and Kubernetes. 
-                    I'm eager to build resilient microservices that handle real-world complexity and data distribution. 
-                    I want to dive deeper into CAP theorem trade-offs and their impact on service design.
-                </div>
-            </div>
-        </div>
-        
-        <div class="experiance-body">
-            <div class="experiance-image">
-                <img src="./statics/img/system-design.png" alt="experiance-image" class="experiance-img"/>
-            </div>
-            <div class="experiance-content">
-                <div class="experiance-title">System Design</div>
-                <div class="experiance-description">
-                    I love diving into system design — thinking about architecture, data flow, performance bottlenecks, and building reliable and maintainable services at scale. 
-                    I regularly practice design interviews and draw diagrams to map out components and their interactions. 
-                    I’m interested in balancing trade-offs between latency, throughput. 
-                    I’m constantly refining my approach by reviewing designs from real-world companies and tech blogs.
-                </div>
-            </div>
-        </div>
-        
+          </div>
+          <p class="muted">Outside work, I play tennis, lift weights, and enjoy Souls games like Elden Ring and Bloodborne.</p>
+        </section>
+      </div>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>AmirHossein Motaghian <span aria-hidden="true">·</span> Tehran, Iran</p>
+      <ul class="footer-links" aria-label="Profiles">
+        <li><a href="https://github.com/amirhossein2831">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/amirh-motaghian-644698387">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
