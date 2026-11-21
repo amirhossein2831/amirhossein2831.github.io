@@ -186,13 +186,20 @@ img { display: block; }
 }
 @media (max-width: 599px) {
   .site-header nav a { font-size: 12px; }
-  .hero-inner { padding-top: 30px; }
-  .hero-greeting { font-size: 27px; }
-  .hero h1 { max-width: 15ch; font-size: 35px; }
-  .hero-description { font-size: 20px; }
-  .hero-actions { gap: 18px; }
+  .hero::after { display: none; }
+  .hero-inner { padding: 24px 6% 300px; }
+  .hero-copy { margin-top: 14px; text-align: center; }
+  .hero-greeting { font-size: 24px; }
+  .hero h1 { max-width: 100%; margin-block: 12px 16px; font-size: clamp(30px, 9vw, 35px); line-height: 1.12; }
+  .hero-description { margin-inline: auto; font-size: 18px; line-height: 1.35; }
+  .hero-actions { flex-direction: column; justify-content: center; gap: 14px; margin-top: 25px; }
+  .hero-actions .availability { order: -1; }
   .availability { font-size: 14px; }
-  .about { grid-template-columns: 1fr; gap: 32px; padding-top: 35px; }
+  .hero-github { margin-top: 18px; }
+  .portrait { right: auto; left: 50%; bottom: clamp(-84px, -19.2cqw, -64px); top: auto; width: min(64cqw, 280px); transform: translateX(-50%); }
+  .hero-white { height: 132px; }
+  .hero-layer { display: none; }
+  .about { grid-template-columns: 1fr; gap: 32px; padding-top: 125px; }
   .about-copy { grid-row: 2; }
   .signature { grid-column: 1; grid-row: 3; justify-self: end; font-size: 50px; }
   .about-actions { grid-row: 4; }
@@ -201,4 +208,18 @@ img { display: block; }
   .stat-card > span:last-child { font-size: 2.6cqw; max-width: 30cqw; }
   .site-footer { flex-direction: column; }
   .entertainment-grid { grid-template-columns: 1fr; }
+}
+
+/* Keep the compact centered hero composition through tablet widths. */
+@media (min-width: 600px) and (max-width: 959px) {
+  .hero::after { display: none; }
+  .hero-inner { padding: 40px 6% 430px; }
+  .hero-copy { margin-top: 30px; text-align: center; }
+  .hero-description { margin-inline: auto; }
+  .hero-actions { flex-direction: column; justify-content: center; gap: 14px; }
+  .hero-actions .availability { order: -1; }
+  .hero-github { margin-top: 18px; }
+  .portrait { right: auto; left: 50%; bottom: clamp(-116px, -19.2cqw, -84px); top: auto; width: min(64.188cqw, 388.235px); transform: translateX(-50%); }
+  .hero-layer { display: none; }
+  .about { padding-top: 180px; }
 }
