@@ -50,7 +50,7 @@
 .template-link:hover { color: #28755d; }
 .hero-art { position: relative; min-height: 24rem; }
 .hero-avatar { position: absolute; top: 50%; left: 50%; z-index: 2; width: min(70%, 18rem); aspect-ratio: 1; overflow: hidden; transform: translate(-50%, -50%); border-radius: 50%; background: #e7e4de; }
-.hero-avatar img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.78); }
+.hero-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .orb { position: absolute; border-radius: 50%; }
 .orb-pink { top: 2%; right: 4%; width: 5rem; height: 5rem; background: #efa8ab; }
 .orb-yellow { top: 13%; right: 20%; width: 4.3rem; height: 4.3rem; background: #f5c65b; }
@@ -199,7 +199,7 @@ img { display: block; max-inline-size: 100%; }
 .hero-side-note { margin-top: auto; color: #b6b9b3; font-size: 0.9rem; }
 .hero-panel-dark .portrait { width: 100%; margin-block: auto 2rem; }
 .hero-panel-dark .portrait-image { border: 0; border-radius: 0; background: #222624; }
-.hero-panel-dark .portrait img { filter: grayscale(1) contrast(0.94); mix-blend-mode: screen; opacity: 0.9; }
+.hero-panel-dark .portrait img { filter: none; mix-blend-mode: normal; opacity: 1; }
 .hero-panel-dark .portrait figcaption { color: #e8e7df; }
 .hero-panel-dark .marker { color: #fff; }
 .hero-panel-dark .portrait-location { color: #b6b9b3; }
