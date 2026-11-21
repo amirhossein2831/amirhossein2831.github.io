@@ -16,9 +16,9 @@ Open `http://127.0.0.1:8000/`.
 
 | Path | Content |
 | --- | --- |
-| `index.html` | Introduction, highlights, and contact |
-| `projects.html` | Selected production work and public projects |
-| `more.html` | Experience, skills, education, and interests |
+| `index.html` | Introduction, services, skills, projects and details, career, education, and contact |
+| `projects.html`, `more.html` | Compatibility URLs that redirect to homepage sections |
+| `assets/js/legacy-redirect.js` | Preserve legacy project and skills anchors |
 | `assets/css/portfolio.css` | Measured Figma homepage and responsive adaptation |
 | `assets/css/site.css` | Existing projects and experience page styles |
 | `assets/fonts/` | Self-hosted Inter, Train One, Whisper, and their licenses |
@@ -26,12 +26,12 @@ Open `http://127.0.0.1:8000/`.
 | `assets/images/` | Portrait, favicon, and social preview image |
 | `robots.txt`, `sitemap.xml` | Search engine discovery |
 
-Keep the shared navigation and footer consistent across all three pages. If a page URL changes, update its canonical URL, social metadata, and sitemap entry as well. GitHub Pages can serve these files directly from the repository root.
+All navigation and project-detail links stay on the homepage. Keep section IDs stable so existing bookmarks continue working. GitHub Pages can serve these files directly from the repository root.
 
 ## Homepage reference
 
-The homepage follows [Desktop - 2, node 1:2](https://www.figma.com/design/wsZ2OIJhZ3CnMQQrMPkvZ1/Portfolio-website-template--Community-?node-id=1-2), read through the official Figma MCP server. The original frame is 1440 × 2040. Its header is 80px high, the portrait slot is at (720, 195) with size 648 × 692, and the About section begins at y=1016. Desktop proportions stop scaling at the reference's 1440px width.
+The homepage adapts [Desktop - 2, node 1:2](https://www.figma.com/design/wsZ2OIJhZ3CnMQQrMPkvZ1/Portfolio-website-template--Community-?node-id=1-2), read through the official Figma MCP server. The original frame is 1440 × 2040. Header and hero backgrounds now fill the viewport, while inner content stops scaling at 1440px to remain readable on wide screens. The portrait is 15% smaller than the source slot, and its floating metric badge has been removed.
 
-Intentional substitutions are the natural portrait, blue accent palette, personal name/monogram, resume-backed content and metrics, working social links, Career instead of the unused Blog link, and downloadable international CV. The longer name is fitted into the original single-line title slot. Stat-border assets keep their original geometry and receive a blue hue shift; the photograph receives no color filter.
+Intentional substitutions are the natural portrait, lighter blue accent palette, personal name/monogram, resume-backed content and metrics, working social links with an explicit GitHub profile link, Career instead of the unused Blog link, and downloadable international CV. The longer name is fitted into the original single-line title slot. Stat-border assets keep their original geometry and receive a blue hue shift; the photograph receives no color filter.
 
-The source contains no mobile frame and ends after About. Mobile layout and Services, Portfolio, and Contact extensions are adaptations, not additional Figma screens. The separate projects and experience pages currently retain their earlier styling.
+The source contains no mobile frame and ends after About. Mobile layout and Services, Skills, Portfolio, Career, and Contact extensions are adaptations, not additional Figma screens. Project details sit directly below the project cards. Old project and experience URLs redirect here, with plain links available when JavaScript is disabled.
