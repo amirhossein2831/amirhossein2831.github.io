@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Dark fantasy game sticker</title>
+  <desc id="desc">A dark fantasy sticker with a sword, flame, and moon inspired by Malenia and Sekiro.</desc>
+  <rect width="640" height="240" rx="36" fill="#242735"/>
+  <circle cx="126" cy="101" r="52" fill="#d6c889"/>
+  <path d="M91 180l75-145 13 8-59 161z" fill="#d9e1ec" stroke="#fff" stroke-width="7"/>
+  <path d="M77 177h82M93 192h51" stroke="#c8a85c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M243 190c-30-35 22-50 2-92 43 31 15 57 49 72 18-30 14-67 5-91 42 42 35 83 5 111z" fill="#d55d3f" stroke="#fff" stroke-width="8"/>
+  <text x="340" y="113" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="38" font-weight="800" letter-spacing="2">MALENIA</text>
+  <text x="340" y="162" fill="#c8a85c" font-family="Inter,Arial,sans-serif" font-size="38" font-weight="800" letter-spacing="2">× SEKIRO</text>
+</svg>
