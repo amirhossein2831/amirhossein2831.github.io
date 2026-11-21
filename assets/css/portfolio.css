@@ -112,6 +112,16 @@ img { display: block; }
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
 .contact p { margin-top: 20px; max-width: 520px; font-size: 18px; line-height: 1.7; }
 .contact-links { display: flex; flex-direction: column; justify-content: center; gap: 20px; font-weight: 600; overflow-wrap: anywhere; }
+.entertainment { border-top: 1px solid #cdd8e4; }
+.entertainment-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 56px; }
+.entertainment-grid article { display: flex; flex-direction: column; align-items: start; min-height: 360px; padding: 28px; border: 3px solid var(--blue-light); border-right-color: var(--blue); border-radius: 27px; overflow: hidden; }
+.entertainment-grid h3 { margin-top: 18px; font-size: 24px; font-weight: 800; }
+.entertainment-grid article > p:not(.card-number) { margin-top: 16px; font-size: 16px; line-height: 1.7; }
+.entertainment-log { display: flex; align-items: center; justify-content: center; width: calc(100% + 56px); min-height: 108px; margin: auto -28px -28px; padding: 18px; color: #fff; font-size: clamp(19px, 2.2cqw, 31px); font-weight: 800; letter-spacing: .06em; text-align: center; transform: rotate(-3deg); }
+.log-luffy { background: #d64b3f; }
+.log-djokovic { background: #2e6db3; transform: rotate(3deg); }
+.log-souls { background: #242735; font-size: clamp(15px, 1.8cqw, 25px); }
+.log-souls span { margin-inline: 8px; color: #c8a85c; }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; max-width: 1440px; margin-inline: auto; padding: 32px 5%; border-top: 1px solid #cdd8e4; font-size: 14px; }
 
 /* There is no mobile frame in the source file. This reflow preserves the
@@ -166,6 +176,9 @@ img { display: block; }
   .extension { padding: 45px 6%; }
   .section-lead { font-size: 20px; }
   .contact { grid-template-columns: 1fr; gap: 35px; }
+  .entertainment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .entertainment-grid article { min-height: 330px; padding: 22px; }
+  .entertainment-log { width: calc(100% + 44px); margin: auto -22px -22px; }
 }
 @media (max-width: 599px) {
   .site-header nav a { font-size: 12px; }
@@ -183,4 +196,5 @@ img { display: block; }
   .profile-details .email { font-size: 12px; }
   .stat-card > span:last-child { font-size: 2.6cqw; max-width: 30cqw; }
   .site-footer { flex-direction: column; }
+  .entertainment-grid { grid-template-columns: 1fr; }
 }

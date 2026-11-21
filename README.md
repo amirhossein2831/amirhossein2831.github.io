@@ -16,7 +16,7 @@ Open `http://127.0.0.1:8000/`.
 
 | Path | Content |
 | --- | --- |
-| `index.html` | Introduction, services, skills, projects and details, career, education, and contact |
+| `index.html` | Introduction, services, skills, projects and details, career, education, contact, and entertainment |
 | `projects.html`, `more.html` | Compatibility URLs that redirect to homepage sections |
 | `assets/js/legacy-redirect.js` | Preserve legacy project and skills anchors |
 | `assets/js/hero-portrait.js` | Preserve the Figma portrait-to-curve relationship across resizing and zoom |
