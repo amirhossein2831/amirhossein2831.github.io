@@ -1,6 +1,6 @@
 /* Adapted from Figma Desktop - 2 (1:2), 1440 × 2040.
    Backgrounds fill the viewport; content proportions cap at 1440px.
-   The portrait is smaller than the source and retains its natural colors. */
+   The portrait uses the source proportions and retains its natural colors. */
 @font-face { font-family: Inter; src: url('../fonts/inter-300.ttf') format('truetype'); font-weight: 300; font-display: swap; }
 @font-face { font-family: Inter; src: url('../fonts/inter-400.ttf') format('truetype'); font-weight: 400; font-display: swap; }
 @font-face { font-family: Inter; src: url('../fonts/inter-600.ttf') format('truetype'); font-weight: 600; font-display: swap; }
@@ -9,7 +9,7 @@
 @font-face { font-family: 'Train One'; src: url('../fonts/train-one-400.ttf') format('truetype'); font-weight: 400; font-display: swap; }
 @font-face { font-family: Whisper; src: url('../fonts/whisper-400.ttf') format('truetype'); font-weight: 400; font-display: swap; }
 
-:root { color-scheme: light; --blue: #1531ad; --blue-light: #688bda; --ink: #182747; --lavender: #8e7ab8; font-family: Inter, sans-serif; }
+:root { color-scheme: light; --blue: #1531ad; --hero-blue-top: #3c5fd8; --blue-light: #688bda; --ink: #182747; --lavender: #8e7ab8; font-family: Inter, sans-serif; }
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: #fff; color: #000; }
 h1, h2, h3, p, dl, dd { margin: 0; }
@@ -24,7 +24,7 @@ img { display: block; }
 .header-inner, .hero-inner, .page-content { width: 100%; max-width: 1440px; margin-inline: auto; container-type: inline-size; }
 
 /* Header: y 0–80. The stock logo and unused Blog link are personalized. */
-.site-header { background: var(--blue); color: #fff; }
+.site-header { background: var(--hero-blue-top); color: #fff; }
 .header-inner { height: min(5.555556vw, 80px); display: flex; align-items: center; justify-content: space-between; padding-inline: min(4.305556vw, 62px) min(4.375vw, 63px); }
 .brand { flex: 0 0 8.055556cqw; font-family: Whisper, cursive; font-size: 4.1cqw; line-height: 1; text-decoration: none; }
 .site-header nav { display: flex; align-items: center; gap: 2.5cqw; }
@@ -36,7 +36,7 @@ img { display: block; }
 .solid-button { display: inline-flex; align-items: center; justify-content: center; background: var(--ink); color: #fff; font-weight: 800; text-decoration: none; }
 
 /* Hero: all positions below are relative to the 80px header. */
-.hero { position: relative; z-index: 1; height: min(65vw, 936px); background: var(--blue); color: #fff; isolation: isolate; }
+.hero { position: relative; z-index: 1; height: min(65vw, 936px); background: linear-gradient(180deg, var(--hero-blue-top) 0%, #2b4bc5 42%, var(--blue) 100%); color: #fff; isolation: isolate; }
 .hero-inner { position: relative; z-index: 1; height: 100%; }
 .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 10px; background: #fff; pointer-events: none; }
 .hero-white, .hero-layer { position: absolute; pointer-events: none; background-repeat: no-repeat; background-size: contain; }
@@ -52,7 +52,7 @@ img { display: block; }
 .hero-github { display: inline-block; margin-top: 1.4cqw; font-size: 1.25cqw; font-weight: 600; }
 .availability { display: flex; align-items: center; gap: 1.111111cqw; font-size: 1.527778cqw; font-weight: 800; white-space: nowrap; }
 .availability i { flex: 0 0 .972222cqw; height: 1.041667cqw; border-radius: 50%; background: #78c9ff; }
-.portrait { position: absolute; left: 53.375cqw; top: var(--portrait-top, 10.5cqw); width: 38.25cqw; height: 40.847222cqw; overflow: hidden; border-radius: 50%; }
+.portrait { position: absolute; left: 50cqw; top: var(--portrait-top, 7.986111cqw); width: 45cqw; height: 48.055556cqw; overflow: hidden; border-radius: 50%; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; filter: none; mix-blend-mode: normal; opacity: 1; }
 
 /* About: starts at original frame y=1016, ends at y=2040. */
@@ -124,8 +124,8 @@ img { display: block; }
   .header-cv { width: auto; height: 44px; padding-inline: 16px; border-width: 2px; }
   .hero { height: auto; }
   .hero::after { height: 3px; }
-  .hero-inner { height: auto; padding: 40px 6% calc(min(58.263cqw, 352.408px) + 90px); }
-  .portrait { left: auto; right: 6%; top: var(--portrait-top, 60%); width: min(54.56cqw, 330px); height: auto; aspect-ratio: 648 / 692; }
+  .hero-inner { height: auto; padding: 40px 6% calc(min(68.544cqw, 414.379px) + 90px); }
+  .portrait { left: auto; right: 6%; top: var(--portrait-top, 60%); width: min(64.188cqw, 388.235px); height: auto; aspect-ratio: 648 / 692; }
   .hero-copy { position: relative; top: auto; left: auto; width: 100%; margin-top: 30px; }
   .hero-greeting { height: auto; font-size: 32px; }
   .hero h1 { height: auto; margin-block: 20px; padding: 0; font-size: clamp(31px, 5.2vw, 48px); white-space: normal; }
